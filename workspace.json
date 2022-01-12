@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "components-wc-hello-world": "libs/components/wc-hello-world",
+    "components-wc-hello-world-e2e": "apps/components-wc-hello-world-e2e",
     "wc-app": "apps/wc-app",
     "wc-app-e2e": "apps/wc-app-e2e"
   }

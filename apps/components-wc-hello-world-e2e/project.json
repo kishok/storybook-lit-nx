@@ -1,0 +1,28 @@
+{
+  "root": "apps/components-wc-hello-world-e2e",
+  "sourceRoot": "apps/components-wc-hello-world-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/components-wc-hello-world-e2e/cypress.json",
+        "devServerTarget": "components-wc-hello-world:storybook"
+      },
+      "configurations": {
+        "ci": {
+          "devServerTarget": "components-wc-hello-world:storybook:ci"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/components-wc-hello-world-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["components-wc-hello-world"]
+}
