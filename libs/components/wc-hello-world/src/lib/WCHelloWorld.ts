@@ -3,7 +3,7 @@ import {property} from 'lit/decorators.js';
 
 export class HelloWorldElement extends LitElement {
 
-  static styles = css`p { color: '#1663b8' }`;
+  static styles = css`p { color: #1663b8 }`;
 
   @property() name = 'Community';
 
